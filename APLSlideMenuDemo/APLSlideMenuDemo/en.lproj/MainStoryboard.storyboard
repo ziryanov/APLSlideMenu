@@ -104,7 +104,6 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4B-zi-50b">
-                                <rect key="frame" x="80" y="-80" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -193,11 +192,36 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="gvr-2k-aa8"/>
+                    <navigationItem key="navigationItem" id="gvr-2k-aa8">
+                        <barButtonItem key="rightBarButtonItem" title="Push" id="eyW-Hp-WoR">
+                            <connections>
+                                <segue destination="c2Y-Ga-WsN" kind="push" id="z0a-iA-le7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovD-NG-bOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="891" y="29"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QCt-6P-8z5">
+            <objects>
+                <viewController id="c2Y-Ga-WsN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SdY-U1-NKw"/>
+                        <viewControllerLayoutGuide type="bottom" id="nO6-iy-R6N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jA3-fs-WTe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qsd-Xs-4C5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZ7-oD-EUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="29"/>
         </scene>
         <!--Right Menu View Controller-->
         <scene sceneID="gGN-kD-96i">
